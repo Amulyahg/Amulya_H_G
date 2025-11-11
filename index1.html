@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Amulya H G — Portfolio</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Small custom animations -->
+    <style>
+      /* fade-up animation */
+      @keyframes fadeUp {
+        from {
+          opacity: 0;
+          transform: translateY(10px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-up {
+        animation: fadeUp 0.6s ease forwards;
+        opacity: 0;
+      }
+      /* stagger helper (applies increasing delay when added) */
+      .delay-100 { animation-delay: 0.1s; }
+      .delay-200 { animation-delay: 0.2s; }
+      .delay-300 { animation-delay: 0.3s; }
+      .delay-400 { animation-delay: 0.4s; }
+      .delay-500 { animation-delay: 0.5s; }
+
+      /* subtle focus ring for keyboard accessibility */
+      :focus { outline: none; box-shadow: 0 0 0 3px rgba(99,102,241,0.15); border-radius: 8px; }
+    </style>
+  </head>
+
+  <body class="bg-gradient-to-b from-white to-gray-50 text-gray-900">
+    <div class="min-h-screen flex items-start justify-center py-12 px-4">
+      <div class="w-full max-w-4xl">
+
+        <!-- Header -->
+        <header class="bg-white rounded-2xl shadow p-8 mb-8">
+          <div class="flex flex-col sm:flex-row items-center gap-6">
+            <img
+              src="https://via.placeholder.com/160"
+              alt="Amulya H G"
+              class="w-32 h-32 rounded-2xl object-cover shadow-lg fade-up delay-100"
+            />
+
+            <div class="text-center sm:text-left">
+              <h1 class="text-3xl sm:text-4xl font-extrabold leading-tight fade-up delay-200">Amulya H G</h1>
+              <p class="mt-1 text-indigo-600 font-medium fade-up delay-300">Full Stack Developer</p>
+
+              <p class="mt-4 text-gray-700 max-w-xl fade-up delay-400">
+                Final year BCA student at SMR College, Davanagere. I’m passionate about
+                programming and problem solving — I enjoy turning ideas into working
+                software. I focus on writing clean, maintainable code and learning new
+                tools and patterns. I love solving algorithmic problems and building
+                useful web applications using modern web technologies.
+              </p>
+
+              <div class="mt-4 flex justify-center sm:justify-start gap-3 fade-up delay-500">
+                <a
+                  href="#contact"
+                  class="inline-block px-4 py-2 rounded-xl bg-indigo-600 text-white font-medium shadow hover:bg-indigo-700 transition"
+                >Contact</a>
+
+                <a
+                  href="#education"
+                  class="inline-block px-4 py-2 rounded-xl border border-gray-200 text-gray-800 font-medium hover:bg-gray-100 transition"
+                >Education</a>
+              </div>
+            </div>
+          </div>
+        </header>
+
+        <!-- Main -->
+        <main class="space-y-8">
+
+          <!-- Skills -->
+          <section class="bg-white rounded-2xl shadow p-6 fade-up delay-100">
+            <div class="flex items-center justify-between">
+              <h2 class="text-2xl font-bold">Skills</h2>
+            </div>
+
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4">
+              <div>
+                <h3 class="font-semibold text-gray-700">Programming</h3>
+                <ul class="mt-2 list-disc list-inside text-gray-600">
+                  <li>Java</li>
+                  <li>Python</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-700">Web & Data</h3>
+                <ul class="mt-2 list-disc list-inside text-gray-600">
+                  <li>HTML, CSS, JavaScript</li>
+                  <li>MySQL</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-700">DevOps & Tools</h3>
+                <ul class="mt-2 list-disc list-inside text-gray-600">
+                  <li>Docker</li>
+                  <li>Git</li>
+                </ul>
+              </div>
+
+              <div>
+                <h3 class="font-semibold text-gray-700">CS Fundamentals</h3>
+                <p class="mt-2 text-gray-600">Data Structures & Algorithms (DSA)</p>
+              </div>
+            </div>
+          </section>
+
+          <!-- Projects (skipped by request) -->
+          <section class="bg-white rounded-2xl shadow p-6 fade-up delay-200">
+            <h2 class="text-2xl font-bold">Projects</h2>
+            <p class="mt-3 text-gray-600">No projects to show right now — currently focused on learning and preparing for advanced coursework and MCA entrance exams. Projects will be added soon.</p>
+          </section>
+
+          <!-- About / Extended bio -->
+          <section class="bg-white rounded-2xl shadow p-6 fade-up delay-300">
+            <h2 class="text-2xl font-bold">About Me</h2>
+            <p class="mt-3 text-gray-700">
+              I am a motivated computer science student who enjoys solving problems and
+              building practical solutions. I like to break down complex problems into
+              smaller parts and use structured thinking to solve them. When I code,
+              I focus on clarity and efficiency — writing programs that are easy to
+              understand, test, and improve. Outside of coding, I enjoy reading about
+              new technologies, practicing DSA, and contributing small automation
+              scripts to simplify repetitive tasks.
+            </p>
+
+            <div class="mt-4">
+              <h3 class="font-semibold text-gray-700">What I enjoy working on</h3>
+              <ul class="mt-2 list-disc list-inside text-gray-600">
+                <li>Building small web apps and utilities</li>
+                <li>Practicing algorithmic challenges (DSA)</li>
+                <li>Learning backend development and deployment with Docker</li>
+              </ul>
+            </div>
+          </section>
+
+          <!-- Education -->
+          <section id="education" class="bg-white rounded-2xl shadow p-6 fade-up delay-400">
+            <h2 class="text-2xl font-bold">Education</h2>
+            <div class="mt-4 text-gray-700">
+              <p class="font-semibold">BCA — SMR College, Davanagere</p>
+              <p class="mt-1">Final year student (expected completion: 2025)</p>
+            </div>
+          </section>
+
+          <!-- Contact -->
+          <section id="contact" class="bg-white rounded-2xl shadow p-6 fade-up delay-500">
+            <h2 class="text-2xl font-bold">Contact</h2>
+
+            <div class="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 text-gray-700">
+              <div>
+                <p><span class="font-semibold">Email:</span> <a href="mailto:amulyahg71@gmail.com" class="text-indigo-600 hover:underline">amulyahg71@gmail.com</a></p>
+                <!-- If you later want to add a phone, put it here -->
+              </div>
+
+              <div class="flex flex-col gap-2">
+                <a href="https://github.com/Amulyahg" target="_blank" class="text-gray-700 hover:text-indigo-600">GitHub: github.com/Amulyahg</a>
+                <a href="https://linkedin.com/in/amulya-hg-895418337" target="_blank" class="text-gray-700 hover:text-indigo-600">LinkedIn: linkedin.com/in/amulya-hg-895418337</a>
+              </div>
+            </div>
+
+            <div class="mt-6">
+              <a href="https://github.com/Amulyahg" target="_blank" class="inline-block px-4 py-2 rounded-lg bg-indigo-600 text-white font-medium hover:bg-indigo-700 transition">Visit my GitHub</a>
+            </div>
+          </section>
+
+        </main>
+
+        <footer class="mt-8 text-center text-sm text-gray-500">
+          © 2025 Amulya H G — Built with care
+        </footer>
+      </div>
+    </div>
+
+    <!-- Small script to add fade-up class after DOM loads (gives nice stagger effect) -->
+    <script>
+      window.addEventListener('DOMContentLoaded', () => {
+        // find elements that already have 'fade-up' and add delays to create a simple stagger
+        const fadeElements = document.querySelectorAll('.fade-up');
+        fadeElements.forEach((el, i) => {
+          // add a tiny extra delay for each element (already some delays set via class)
+          el.style.animationDelay = (parseFloat(getComputedStyle(el).animationDelay || 0) + i * 0.06) + 's';
+          // ensure final opacity after animation
+          el.style.opacity = '';
+        });
+      });
+    </script>
+  </body>
+</html>
